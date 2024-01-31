@@ -41,8 +41,8 @@ metadata:
 spec:
   # tls:
   #   - hosts:
-  #     - change.me
-  #     secretName: letsencrypt
+  #       - "*.change.me"
+  #     secretName: certificate-dumbmerch
   rules:
     - host: api.nafis.studentdumbways.my.id
       http:

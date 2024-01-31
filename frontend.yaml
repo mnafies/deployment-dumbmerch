@@ -39,10 +39,10 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
     # cert-manager.io/cluster-issuer: "letsencrypt-prod-office"
 spec:
-  # tls:
-  #   - hosts:
-  #     - change.me
-  #     secretName: letsencrypt
+  tls:
+    - hosts:
+        - "*.change.me"
+      secretName: certificate-dumbmerch
   rules:
     - host: nafis.studentdumbways.my.id
       http:
