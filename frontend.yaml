@@ -37,11 +37,11 @@ metadata:
   # namespace: mvp
   annotations:
     kubernetes.io/ingress.class: "nginx"
-    # cert-manager.io/cluster-issuer: "letsencrypt-prod-office"
+    cert-manager.io/cluster-issuer: "certificate-dumbmerch"
 spec:
   tls:
     - hosts:
-        - "*.change.me"
+        - "nafis.studentdumbways.my.id"
       secretName: certificate-dumbmerch
   rules:
     - host: nafis.studentdumbways.my.id
